@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input[type="text"], input[type="password"] {
+            background: transparent;
+            border-radius: 10px;
+            border-style: solid;
+            margin: 4px;
+            padding: 5px;
+            width: 80%;
+        }
+        input[type="submit"] {
+            background-color: rgba(250,0,0,0.3);
+            border-style: solid;
+            font-family: Calibri;
+            font-size: 15px;
+            height: 30px;
+            padding: 6px;
+            width: 200px;
+        }
+        .vline {
+            border-left: 5px solid black;
+            left: 50%;
+            margin-left: -3px;
+            top: 0;
+        }
+    </style>
+</head>
+<!-- Catatan : Digunakan di layar 1300x860 -->
+<body>
+    <div class="container">
+        <img class="logo" src="image/logo.png" alt="Universitas Jember">
+        <div class="main">
+            <img src="image/rektor.jpg" alt="Rektor" style="height: 300px; width: 100%">
+            <div class="vline"></div>
+            <div>
+                <h2>Silakan masuk untuk log in</h2>
+                <form method="POST" action="">
+                    <input type="text" name="user" placeholder="Username"><br>
+                    <input type="password" name="pass" placeholder="********"><br>
+                    <input type="submit" value="Masuk">
+                </form>
+                <p><i>"Perbedaan antara orang yang sukses <br>
+                    dan orang lain bukanlah kurangnya kekuatan <br>
+                    bukan kurangnya pengetahuan melainkan kurangnya kemauan."</i></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
